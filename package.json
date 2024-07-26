@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress open"
+    "cy:open": "cypress open",
+    "cypress:cli":  "cypress run",
+    "cy:run:qa": "cypress run -C cypress.stage.config.js",
+    "cy:run:chrome": "cypress run --headed",
+    "cy:run:automation": "cupress run --spec 'cypress/e2e/automation.cy.js'"
   },
   "author": "",
   "license": "ISC",
